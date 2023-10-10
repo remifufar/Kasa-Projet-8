@@ -1,6 +1,10 @@
 .conteneur{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+
 img{
     width: 210px;
     height: 68px;
@@ -14,10 +18,11 @@ font-weight: 500;
 font-size: 24px;
 color: #ff6060;
 
-:hover{
-    border-bottom: 1px #ff6060 solid;
-}
+
 
 }
-
+&.Link{
+text-decoration: none;
+list-style-type: none;
+}
 }

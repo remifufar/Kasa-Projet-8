@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from "react-router-dom";
 import logo from "./logo.png";
 
 function Header() {
@@ -9,8 +9,9 @@ function Header() {
     <img src={logo} alt='logo' />
 
     <nav>
-        <p>Acceuil</p>
-        <p>A Propos</p>
+      
+       <Link to ="/"> Acceuil</Link>
+       <Link to ="/About"> A Propos</Link>
     </nav>
 
     </header>
