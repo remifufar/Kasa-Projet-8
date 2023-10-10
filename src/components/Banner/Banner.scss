@@ -1,0 +1,28 @@
+.banner-container{
+    position: relative;
+    background-image: url(./IMG.png);
+    background-size:cover;
+    background-position:bottom;
+    border-radius: 30px ;
+    height: 223px;
+    object-fit: fill;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+.banner-text{
+        position: relative;
+        color: white;
+        font-size: 45px;
+    }
+}
+    .banner-container::before{
+        content:"";
+        inset: 0;
+    position: absolute;
+       opacity: 0.5;
+       background-color: black;
+       border-radius: 30px; 
+       
+    }
+    
+
