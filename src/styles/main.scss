@@ -2,3 +2,10 @@
 margin-left: 75px;
 margin-right: 75px;
 }
+
+@media(max-width: 768px){
+.main{
+    margin: 0px;
+}
+
+}

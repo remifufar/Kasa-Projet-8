@@ -1,18 +1,20 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "./logo.png";
 
 function Header() {
   return (
     <header className='conteneur'>
 
-    <img src={logo} alt='logo' />
+      <img className=' img-banner'src={logo} alt='logo' />
 
-    <nav>
-      
-       <Link to ="/"> Acceuil</Link>
-       <Link to ="/About"> A Propos</Link>
-    </nav>
+      <nav>
+        <ul>
+          <li><NavLink to="/" className={(link) => (link.isActive ? 'active' : '')} > Acceuil </NavLink></li>
+          <li><NavLink to="/About" className={(link) => (link.isActive ? 'active' : '')}> A Propos</NavLink></li>
+
+        </ul>
+      </nav>
 
     </header>
   )

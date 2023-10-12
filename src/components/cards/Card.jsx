@@ -1,28 +1,23 @@
 import React from 'react';
  
-import data from '../data/data.json';
-import { Link } from 'react-router-dom';
+import Data from '../data/data.json';
+import { NavLink } from 'react-router-dom';
 
-function Carte({ carte }) {
+function Carte() {
     return (
-      <div className="carte">
-        <img src={carte.cover} alt="photo" />
-        <p>{carte.title}</p>
-      </div>
-    );
-  }
-  
-  function App() {
-    return (
-      <div className="Cards-conteneur">
-        {data.map((carte) => (
-            <Link to ='' >
-          <Carte key={carte.id} carte={carte} />
-          </Link>
-        ))}
-      </div>
-    );
-  }
-  
-  export default App;
+        <div className='cards-conteneur'>
+            { Data.map (({id, cover, title}) =>
+            <NavLink className="Carte" to= {""} key={id}>
+                <img className="cards-image" src={cover} alt="photo logements" />
+                <div className='text-conteneur'><h2 className='cards-text'>{title}</h2></div>
+            </NavLink>   
+            )}
+
+
+        </div>
+
+    )
+
+    }
+  export default Carte;
   

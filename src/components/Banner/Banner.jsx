@@ -1,13 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-function Banner() {
-  return (
-    <div className="banner-container">
-        <div>
-        <h2 className="banner-text">Chez vous, partout et ailleurs</h2>
-</div>
-</div>
-  )
+const Banner = (props) => {
+    return(
+        <div className="banner-container">
+            <h1 className="banner_title">{props.title}</h1>
+            <img src={props.src} alt='banniere-kasa' className='banner_img' />
+        </div>
+    )
 }
 
-export default Banner
+export default Banner;
