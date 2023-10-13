@@ -1,5 +1,5 @@
 import React from 'react';
-import Collapse from '../Collapse/collapse';
+import Collapse from './Collapse';
 
 const AboutContent = () => {
     return(
