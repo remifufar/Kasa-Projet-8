@@ -12,20 +12,20 @@ import Appartement from "./pages/Appartement";
 function App() {
   return (
     <div className="App">
-      <Router> 
-        
-            <Header/>
-        <main className="main">   
-				<Routes>
-					<Route path="/" element={<Home />} />
-          <Route path="About" element={<About />} />
-          <Route exact path="/Appartement/:id" element= {<Appartement />} />
-          <Route path="*" element={<Error />} />
-				</Routes>
+      <Router>
 
-			</main>
-            <Footer/>
-        </Router>
+        <Header />
+        <main className="main">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="About" element={<About />} />
+            <Route exact path="/Appartement/:id" element={<Appartement />} />
+            <Route path="*" element={<Error />} />
+          </Routes>
+
+        </main>
+        <Footer />
+      </Router>
     </div>
   );
 }

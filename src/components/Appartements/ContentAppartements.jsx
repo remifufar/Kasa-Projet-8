@@ -30,7 +30,7 @@ function ContentAppartements() {
             {item.tags.map((tag, i) => (
             <p className='tag' key={i} >{tag}</p> ))}
                 </div>
-                </div>
+                </div> 
                 
                 <div className='tags-content'>
                 
