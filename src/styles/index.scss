@@ -1,8 +1,10 @@
-@import '/src/styles/App';
-@import '/src/styles/main.scss';
-@import '/src/components/Header/Header.scss';
-@import '/src/components/Footer/Footer.scss';
-@import '/src/components/Banner/Banner.scss';
-@import '/src/components/cards/Cards.scss';
+@import '/src/styles/style/App';
+@import '/src/styles/style/main.scss';
+@import '/src/components/Header/header';
+@import '/src/components/Footer/footer';
+@import '/src/components/Banner/banner';
+@import '/src/components/Cards/Cards';
 @import '/src/components/Collapse/collaspse.scss';
 @import '/src/components/Error/ErrorContent';
+ @import'/src/components/Appartements/content.scss';
+@import '/src/components/Appartements/carrousel.scss';

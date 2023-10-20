@@ -5,18 +5,21 @@ import Footer from "./components/Footer/Footer";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Error from "./pages/Error"
+import Error from "./pages/Error";
+import Appartement from "./pages/Appartement";
+
 
 function App() {
   return (
     <div className="App">
       <Router> 
-        <main className="main">
+        
             <Header/>
-           
+        <main className="main">   
 				<Routes>
 					<Route path="/" element={<Home />} />
           <Route path="About" element={<About />} />
+          <Route exact path="/Appartement/:id" element= {<Appartement />} />
           <Route path="*" element={<Error />} />
 				</Routes>
 

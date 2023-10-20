@@ -1,10 +1,15 @@
 import React from 'react'
-import AboutBanner from '../components/Banner/BannerAbout'
+import Banner from '../components/Banner/Banner'
 import CollapseAbout from '../components/Collapse/CollapseContent'
+
+import imgAboutBanner from '../Assets/ImgAbout.png'
 function About() {
   return (
     <div>
-      <AboutBanner/>
+      <Banner 
+       src={imgAboutBanner}
+      
+      />
       <CollapseAbout/>
     </div>
   )

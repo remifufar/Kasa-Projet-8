@@ -6,6 +6,7 @@ flex-direction: column;
 margin-left: 75px;
 margin-right: 75px ;
 gap: 30px;
+
 }
 
 .collapse-titre {
@@ -15,41 +16,73 @@ gap: 30px;
     justify-content: space-between;
     background-color: #ff6060;
     align-items: center;
-    border-radius: 5px;
+    border-radius: 10px;
     color: white;
     padding-left: 15px;
     padding-right: 25px;
+    z-index: 0; 
 }
 
 .collapse-content {
+    display: flex;
     background-color: #f7f7f7;
     color: #ff6060;
-    width: 8%;
-    
+   overflow: hidden;
+   
 }
 .collapse_p{
     margin: 0%;
     padding: 20px;
-    
     color: #ff6060;
     font-size: 20px;
     background-color: #f7f7f7;
-    
+   
+    transition: height 5s ease-out;
+}
+p{
+    overflow: hidden;
 }
 
-i{
+i {
     font-size: 25px;
     
-    :active{
-        transform: rotate(180deg);
-    }
+    
 }
 
 @media(max-width: 768px){
 
     .about_collapses{
         margin: 0;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-right: 15px;
+        margin-left: 15px;
     }
 }
+
+/* App.css */
+.animated-element {
+    transition: transform 1s; /* Durée de l'animation */
+    
+  }
+  .rotate {
+    transform: rotate(180deg); /* Modifiez l'angle de rotation selon vos besoins */
+  }
+  
+  /* App.css */
+/* App.css */
+.animated-elements {
+  max-height:0px;
+  overflow: hidden;  /* Style de base pour l'élément */
+    
+  }
+  
+  .expanded {
+    transition: max-height 2s ease-in-out; /* Durée de la transition de la hauteur */
+  
+  max-height: 500px;
+  z-index: -1;
+  background-color: #ff6060;
+  }
+  
+  
