@@ -133,7 +133,49 @@ row-gap: 35px;
     transition-duration: 1s;
     transform: scale(1.08);
   }
+
+  @media(max-width: 1024px){
+    .tag{
+      background-color: #ff6060;
+      padding: 4px 13px 4px 13px;
+      color: white;
+      border-radius: 15px;
+      font-size: 12px;
+     
+    }
+  .tags-content{
+      
+
+      img{
+        width: 100px ;
+      }
+
+    }
+
+    .star-grey{
+      margin-left: 8px;
+      font-size: 25px;
+      color: #E3E3E3;
+      ;
+  }
+  .star-red{
+      margin-left:8px;
+      font-size: 25px;
+      color: #ff6060;
+  }
+
+
+  }
   @media(max-width: 768px){
+    .tag{
+      
+      background-color: #ff6060;
+      padding: 4px 13px 4px 13px;
+      color: white;
+      border-radius: 15px;
+      font-size: 12px;
+  }
+    
     .Appartement_header{
       margin: 15px;
       flex-direction: column;

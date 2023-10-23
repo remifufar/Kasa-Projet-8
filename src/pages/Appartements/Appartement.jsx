@@ -42,6 +42,8 @@ function Appartement() {
           
               
           </div>
+
+          
           <article className='Collapse-Content'>
           <div className='Collapse'>
                   <Collapse 
