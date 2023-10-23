@@ -33,6 +33,12 @@
 
     }
 }
+.span{
+display: flex;
+flex-direction: column;
+row-gap: 35px;
+}
+
 
 .star-grey{
     margin-left: 8px;
@@ -77,6 +83,9 @@
 
     }
 }
+
+
+
 
 .slider {
     position: relative;

@@ -12,6 +12,8 @@ function Collapse(props) {
         setIsOpen(!isOpen);
         setRotate(!rotate);
         setExpand(!expand);
+
+        
       };
 
   return (
@@ -22,7 +24,8 @@ function Collapse(props) {
         className={`animated-element ${rotate ? 'rotate' : ''}`}><i className="fa-solid fa-chevron-up"></i> </p>
       </div>
         <div className={`animated-elements ${expand ? 'expanded' : ''}`}>
-           {isOpen && <p className='collapse_p'>{props.content}</p> } 
+             <p className='collapse_p'>{props.content}</p> 
+
         </div>
     </div>
   )

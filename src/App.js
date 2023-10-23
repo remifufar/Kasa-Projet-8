@@ -5,8 +5,8 @@ import Footer from "./components/Footer/Footer";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Error from "./pages/Error";
-import Appartement from "./pages/Appartement";
+import Error from "./pages/Error/Error";
+import Appartement from "./pages/Appartements/Appartement";
 
 
 function App() {
